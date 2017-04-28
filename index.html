@@ -4,9 +4,75 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="header-video">
+    <video autoplay  poster="img/shop.jpg" id="bgvid" loop>
+      <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+      <!-- <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm"> -->
+      <source src="../img/video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="main-content-wrapper">
+  <div class="container">
+    <hr>
+      <div class="workshop">
+        <h1>Workshop</h1>
+        <div class="row">
+          <div class="six columns">
+            <img src="img/work.jpg" width="100%">
+          </div>
+          <div class="six columns">
+            <p>Welcome to the website of Josh Hall Surfboards. Glad you could drop in for a visit. This site is organized to guide you through my catalog of boards easily, while providing as much information as possible so you can put together your future order. Pictures will be updated in the gallery as often as possible but, for daily stoke, please visit me on my blog, Facebook, or Instagram. Thank you for your time and support in advance. I look forward to answering any and all questions about boards and starting your custom order soon.</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="latest-boards">
+        <h1>Latest Boards</h1>
+        <div class="row">
+          <div class="three columns">
+          <a href="">
+            <img src="img/surfboards/flower.jpg" width="100%" alt="">
+          </a>
+          <a href="">Desert Flower</a>
+          </div>
+          <div class="three columns">
+            <a href="">
+              <img src="img/surfboards/germany.jpg" width="100%" alt="">
+            </a>
+            <a href="">Germany Glide</a>
+          </div>
+          <div class="three columns">
+            <a href="">
+              <img src="img/surfboards/long.jpg" width="100%" alt="">
+            </a>
+            <a href="">Easy ride</a>
+          </div>
+           <div class="three columns">
+            <a href="">
+              <img src="img/surfboards/long-flower.jpg" width="100%" alt="">
+            </a>
+            <a href="">Easy ride</a>
+           </div>
+        </div>
+      </div>
+      <hr>
+      <div class="workshop">
+        <h1>Latest advices</h1>
+        <div class="row">
+          <h2>Why a five fins board ?</h2>
+          <div class="six columns" style="margin-left:0">
+            <p>Welcome to the website of Josh Hall Surfboards. Glad you could drop in for a visit. This site is organized to guide you through my catalog of boards easily, while providing as much information as possible so you can put together your future order. Pictures will be updated in the gallery as often as possible but, for daily stoke, please visit me on my blog, Facebook, or Instagram. Thank you for your time and support in advance. I look forward to answering any and all questions about boards and starting your custom order soon.</p>
+          </div>
+          <div class="six columns">
+            <img src="img/fins.jpg" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <ul class="post-list">
+  </div>
+
+  <!-- <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -16,8 +82,8 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-  </ul>
+  </ul> -->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
